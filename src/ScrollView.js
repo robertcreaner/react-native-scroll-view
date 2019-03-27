@@ -583,7 +583,7 @@ export default class ScrollView extends Component {
     this._responder = {
       onStartShouldSetResponder: this._startShouldSetResponder,
       onStartShouldSetResponderCapture: () => false,
-      onMoveShouldSetResponder: this._moveShouldSetResponder,
+      onMoveShouldSetResponder: this.props.onMoveShouldSetResponder,
       onMoveShouldSetResponderCapture: () => false,
       onResponderGrant: this._handleGrant,
       //onResponderReject: () => { },
